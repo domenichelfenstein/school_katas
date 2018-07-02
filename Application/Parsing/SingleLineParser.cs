@@ -1,7 +1,8 @@
-﻿namespace Application
+﻿namespace Application.Parsing
 {
     using System;
     using System.Linq;
+    using Application.Data;
 
     public class SingleLineParser
     {

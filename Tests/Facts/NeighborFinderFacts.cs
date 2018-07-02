@@ -2,6 +2,7 @@
 {
     using System.Linq;
     using Application;
+    using Application.Logic;
     using FluentAssertions;
     using Xunit;
 

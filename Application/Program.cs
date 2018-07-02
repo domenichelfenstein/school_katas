@@ -2,6 +2,7 @@
 {
     using System;
     using System.Threading;
+    using Application.Logic;
 
     public static class Program
     {

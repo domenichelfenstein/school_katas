@@ -1,13 +1,15 @@
-﻿namespace Application
+﻿namespace Application.Logic
 {
     using System.Collections.Generic;
     using System.Linq;
+    using Application.Data;
+    using Application.Parsing;
 
     public class GameOfLife
     {
         private readonly MultiLineParser parser;
         private readonly NeighborFinder neighborFinder;
-        private GameRules gameRules;
+        private readonly GameRules gameRules;
 
         public GameOfLife()
         {

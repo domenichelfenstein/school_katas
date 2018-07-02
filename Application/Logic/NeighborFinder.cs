@@ -1,6 +1,7 @@
-﻿namespace Application
+﻿namespace Application.Logic
 {
     using System.Collections.Generic;
+    using Application.Data;
 
     public class NeighborFinder
     {

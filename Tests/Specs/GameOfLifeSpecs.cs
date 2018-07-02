@@ -1,6 +1,7 @@
-﻿namespace Tests
+﻿namespace Tests.Specs
 {
     using Application;
+    using Application.Logic;
     using FluentAssertions;
     using Xunit;
 

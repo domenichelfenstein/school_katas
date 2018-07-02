@@ -1,4 +1,4 @@
-﻿namespace Application
+﻿namespace Application.Data
 {
     public enum CellState
     {

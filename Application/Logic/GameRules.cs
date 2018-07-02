@@ -1,5 +1,7 @@
-﻿namespace Application
+﻿namespace Application.Logic
 {
+    using Application.Data;
+
     public class GameRules
     {
         public CellState GetNewState(

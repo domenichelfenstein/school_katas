@@ -1,6 +1,8 @@
 ﻿namespace Tests.Facts
 {
     using Application;
+    using Application.Data;
+    using Application.Parsing;
     using FluentAssertions;
     using Xunit;
 

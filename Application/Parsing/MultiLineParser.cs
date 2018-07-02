@@ -1,9 +1,10 @@
-﻿namespace Application
+﻿namespace Application.Parsing
 {
     using System;
     using System.Collections.Generic;
     using System.Linq;
     using System.Text;
+    using Application.Data;
 
     public class MultiLineParser
     {
