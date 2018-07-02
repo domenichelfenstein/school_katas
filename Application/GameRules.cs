@@ -1,6 +1,6 @@
 ﻿namespace Application
 {
-    public class GameEngine
+    public class GameRules
     {
         public CellState GetNewState(
             CellState cell,

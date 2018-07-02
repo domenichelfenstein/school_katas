@@ -4,13 +4,13 @@
     using FluentAssertions;
     using Xunit;
 
-    public class GameEngineFacts
+    public class GameRulesFacts
     {
-        private readonly GameEngine testee;
+        private readonly GameRules testee;
 
-        public GameEngineFacts()
+        public GameRulesFacts()
         {
-            this.testee = new GameEngine();
+            this.testee = new GameRules();
         }
 
         [Theory]

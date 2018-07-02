@@ -1,14 +1,17 @@
 ﻿namespace Application
 {
-    using System.Collections.Generic;
-
-    public class Grid : List<List<CellState>>
+    public class Grid
     {
-    }
+        public Grid(
+            int width,
+            int height)
+        {
+            this.Width = width;
+            this.Height = height;
+        }
 
-    public enum CellState
-    {
-        Dead = 10,
-        Alive = 20
+        public int Width { get; }
+
+        public int Height { get; }
     }
 }
