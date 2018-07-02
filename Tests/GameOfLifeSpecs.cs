@@ -10,26 +10,43 @@
 
         public GameOfLifeSpecs()
         {
-            this.testee = GameOfLifeBuilder.Build();
+            this.testee = new GameOfLife();
         }
 
-        [Fact]
-        public void NormalBehaviour()
-        {
-            var input = @"
+        [Theory]
+        [InlineData(
+@"
 .....
 .....
 .ooo.
 .....
-.....";
-            var result = this.testee.NextStep(input);
-
-            result.Should().Be(@"
+.....",
+@"
 .....
 ..o..
 ..o..
 ..o..
-.....");
+.....")]
+        [InlineData(
+@"
+.....
+.o.o.
+.ooo.
+.....
+.....",
+@"
+.....
+.o.o.
+.o.o.
+..o..
+.....")]
+        public void NormalBehaviour(
+            string input,
+            string expectedResult)
+        {
+            var result = this.testee.NextStep(input);
+
+            result.Should().Be(expectedResult);
         }
     }
 }

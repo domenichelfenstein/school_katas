@@ -14,7 +14,8 @@
                 .ToArray();
             return new Grid(
                 parts[0],
-                parts[1]);
+                parts[1],
+                new (int X, int Y, CellState State)[0]);
         }
 
         public static (int X, int Y) ToPosition(

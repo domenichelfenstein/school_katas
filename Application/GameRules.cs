@@ -6,7 +6,15 @@
             CellState cell,
             int livingNeighbors)
         {
-            if (livingNeighbors >= 2 && livingNeighbors <= 3)
+            if (cell == CellState.Alive)
+            {
+                if (livingNeighbors >= 2 && livingNeighbors <= 3)
+                {
+                    return CellState.Alive;
+                }
+            }
+
+            if (cell == CellState.Dead && livingNeighbors == 3)
             {
                 return CellState.Alive;
             }

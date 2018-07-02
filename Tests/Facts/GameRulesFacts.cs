@@ -60,9 +60,12 @@
         }
 
         [Theory]
-        [InlineData(3)]
+        [InlineData(3, CellState.Alive)]
+        [InlineData(2, CellState.Dead)]
+        [InlineData(4, CellState.Dead)]
         public void DeadCell_Lives_WithExactlyThreeLivingNeighbors(
-            int livingNeighbors)
+            int livingNeighbors,
+            CellState expectedState)
         {
             var cell = CellState.Dead;
 
@@ -70,7 +73,7 @@
                 cell,
                 livingNeighbors);
 
-            result.Should().Be(CellState.Alive);
+            result.Should().Be(expectedState);
         }
     }
 }
